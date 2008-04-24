@@ -1,0 +1,216 @@
+geany
+------------------------------------------
+Geany is a text editor using the GTK2 toolkit with basic features of an 
+integrated development environment. It was developed to provide a small 
+and fast IDE, which has only a few dependencies from other packages. It 
+supports many filetypes and has some nice features.
+
+Runtime requirements:
+  cygwin-1.5.25-11
+  atk-1.20.0-1
+  gdk-pixbuf2-2.12.9-1
+  glib2-2.14.6-1
+  gtk2-x11-2.12.9-1
+  libcairo2-1.4.14-1
+  libintl8-0.15-1
+  pango-1.18.4-1
+  vte-0.16.12-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  autoconf2.5-2.61-1
+  automake1.10-1.10.1-1
+  binutils-20060817-1
+  cygport-0.3.10-1
+  gawk-3.1.6-1
+  gcc-core-3.4.4-3
+  gnome-common-2.20.0-1
+  intltool-0.36.3-1
+  libtool-2.2.2-2
+  make-3.81-1
+  pkg-config-0.21-1
+  sed-4.1.5-2
+
+Canonical website:
+  http://geany.uvena.de/
+
+Canonical download:
+  http://downloads.sourceforge.net/geany/
+
+-------------------------------------------
+
+Build instructions:
+  unpack geany-0.14-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./geany-0.14-X.cygport all
+
+This will create:
+  /usr/src/geany-0.14-X-src.tar.bz2
+  /usr/src/geany-0.14-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /etc/postinstall/geany.sh
+  /usr/bin/geany.exe
+  /usr/include/geany/dialogs.h
+  /usr/include/geany/document.h
+  /usr/include/geany/editor.h
+  /usr/include/geany/encodings.h
+  /usr/include/geany/filetypes.h
+  /usr/include/geany/geany.h
+  /usr/include/geany/highlighting.h
+  /usr/include/geany/keybindings.h
+  /usr/include/geany/msgwindow.h
+  /usr/include/geany/plugindata.h
+  /usr/include/geany/pluginmacros.h
+  /usr/include/geany/plugins.h
+  /usr/include/geany/prefs.h
+  /usr/include/geany/project.h
+  /usr/include/geany/scintilla/SciLexer.h
+  /usr/include/geany/scintilla/Scintilla.h
+  /usr/include/geany/scintilla/Scintilla.iface
+  /usr/include/geany/scintilla/ScintillaWidget.h
+  /usr/include/geany/sciwrappers.h
+  /usr/include/geany/search.h
+  /usr/include/geany/support.h
+  /usr/include/geany/tagmanager/tm_file_entry.h
+  /usr/include/geany/tagmanager/tm_project.h
+  /usr/include/geany/tagmanager/tm_source_file.h
+  /usr/include/geany/tagmanager/tm_symbol.h
+  /usr/include/geany/tagmanager/tm_tag.h
+  /usr/include/geany/tagmanager/tm_tagmanager.h
+  /usr/include/geany/tagmanager/tm_work_object.h
+  /usr/include/geany/tagmanager/tm_workspace.h
+  /usr/include/geany/templates.h
+  /usr/include/geany/ui_utils.h
+  /usr/include/geany/utils.h
+  /usr/lib/geany/autosave.dll
+  /usr/lib/geany/autosave.la
+  /usr/lib/geany/classbuilder.dll
+  /usr/lib/geany/classbuilder.la
+  /usr/lib/geany/export.dll
+  /usr/lib/geany/export.la
+  /usr/lib/geany/filebrowser.dll
+  /usr/lib/geany/filebrowser.la
+  /usr/lib/geany/htmlchars.dll
+  /usr/lib/geany/htmlchars.la
+  /usr/lib/geany/vcdiff.dll
+  /usr/lib/geany/vcdiff.la
+  /usr/lib/pkgconfig/geany.pc
+  /usr/share/applications/geany.desktop
+  /usr/share/doc/geany-0.14/AUTHORS
+  /usr/share/doc/geany-0.14/COPYING
+  /usr/share/doc/geany-0.14/ChangeLog
+  /usr/share/doc/geany-0.14/HACKING
+  /usr/share/doc/geany-0.14/INSTALL
+  /usr/share/doc/geany-0.14/NEWS
+  /usr/share/doc/geany-0.14/README
+  /usr/share/doc/geany-0.14/ScintillaLicense.txt
+  /usr/share/doc/geany-0.14/THANKS
+  /usr/share/doc/geany-0.14/TODO
+  /usr/share/doc/geany-0.14/html/images/find_dialog.png
+  /usr/share/doc/geany-0.14/html/images/find_in_files_dialog.png
+  /usr/share/doc/geany-0.14/html/images/pref_dialog_display.png
+  /usr/share/doc/geany-0.14/html/images/pref_dialog_edit.png
+  /usr/share/doc/geany-0.14/html/images/pref_dialog_files.png
+  /usr/share/doc/geany-0.14/html/images/pref_dialog_gen.png
+  /usr/share/doc/geany-0.14/html/images/pref_dialog_interface.png
+  /usr/share/doc/geany-0.14/html/images/pref_dialog_keys.png
+  /usr/share/doc/geany-0.14/html/images/pref_dialog_printing.png
+  /usr/share/doc/geany-0.14/html/images/pref_dialog_templ.png
+  /usr/share/doc/geany-0.14/html/images/pref_dialog_toolbar.png
+  /usr/share/doc/geany-0.14/html/images/pref_dialog_tools.png
+  /usr/share/doc/geany-0.14/html/images/pref_dialog_vte.png
+  /usr/share/doc/geany-0.14/html/images/replace_dialog.png
+  /usr/share/doc/geany-0.14/html/index.html
+  /usr/share/doc/geany-0.14/manual.txt
+  /usr/share/geany/GPL-2
+  /usr/share/geany/filetype_extensions.conf
+  /usr/share/geany/filetypes.asm
+  /usr/share/geany/filetypes.c
+  /usr/share/geany/filetypes.caml
+  /usr/share/geany/filetypes.common
+  /usr/share/geany/filetypes.conf
+  /usr/share/geany/filetypes.cpp
+  /usr/share/geany/filetypes.cs
+  /usr/share/geany/filetypes.css
+  /usr/share/geany/filetypes.d
+  /usr/share/geany/filetypes.diff
+  /usr/share/geany/filetypes.docbook
+  /usr/share/geany/filetypes.ferite
+  /usr/share/geany/filetypes.fortran
+  /usr/share/geany/filetypes.freebasic
+  /usr/share/geany/filetypes.haskell
+  /usr/share/geany/filetypes.haxe
+  /usr/share/geany/filetypes.html
+  /usr/share/geany/filetypes.java
+  /usr/share/geany/filetypes.javascript
+  /usr/share/geany/filetypes.latex
+  /usr/share/geany/filetypes.lua
+  /usr/share/geany/filetypes.makefile
+  /usr/share/geany/filetypes.oms
+  /usr/share/geany/filetypes.pascal
+  /usr/share/geany/filetypes.perl
+  /usr/share/geany/filetypes.php
+  /usr/share/geany/filetypes.python
+  /usr/share/geany/filetypes.restructuredtext
+  /usr/share/geany/filetypes.ruby
+  /usr/share/geany/filetypes.sh
+  /usr/share/geany/filetypes.sql
+  /usr/share/geany/filetypes.tcl
+  /usr/share/geany/filetypes.vhdl
+  /usr/share/geany/filetypes.xml
+  /usr/share/geany/global.tags
+  /usr/share/geany/html_entities.tags
+  /usr/share/geany/latex.tags
+  /usr/share/geany/pascal.tags
+  /usr/share/geany/php.tags
+  /usr/share/geany/snippets.conf
+  /usr/share/icons/hicolor/16x16/apps/classviewer-class.png
+  /usr/share/icons/hicolor/16x16/apps/classviewer-macro.png
+  /usr/share/icons/hicolor/16x16/apps/classviewer-member.png
+  /usr/share/icons/hicolor/16x16/apps/classviewer-method.png
+  /usr/share/icons/hicolor/16x16/apps/classviewer-namespace.png
+  /usr/share/icons/hicolor/16x16/apps/classviewer-other.png
+  /usr/share/icons/hicolor/16x16/apps/classviewer-struct.png
+  /usr/share/icons/hicolor/16x16/apps/classviewer-var.png
+  /usr/share/locale/be/LC_MESSAGES/geany.mo
+  /usr/share/locale/bg/LC_MESSAGES/geany.mo
+  /usr/share/locale/ca/LC_MESSAGES/geany.mo
+  /usr/share/locale/cs/LC_MESSAGES/geany.mo
+  /usr/share/locale/de/LC_MESSAGES/geany.mo
+  /usr/share/locale/el/LC_MESSAGES/geany.mo
+  /usr/share/locale/en_GB/LC_MESSAGES/geany.mo
+  /usr/share/locale/es/LC_MESSAGES/geany.mo
+  /usr/share/locale/fi/LC_MESSAGES/geany.mo
+  /usr/share/locale/fr/LC_MESSAGES/geany.mo
+  /usr/share/locale/hu/LC_MESSAGES/geany.mo
+  /usr/share/locale/it/LC_MESSAGES/geany.mo
+  /usr/share/locale/ja/LC_MESSAGES/geany.mo
+  /usr/share/locale/nl/LC_MESSAGES/geany.mo
+  /usr/share/locale/pl/LC_MESSAGES/geany.mo
+  /usr/share/locale/pt_BR/LC_MESSAGES/geany.mo
+  /usr/share/locale/ro/LC_MESSAGES/geany.mo
+  /usr/share/locale/ru/LC_MESSAGES/geany.mo
+  /usr/share/locale/sv/LC_MESSAGES/geany.mo
+  /usr/share/locale/uk/LC_MESSAGES/geany.mo
+  /usr/share/locale/vi/LC_MESSAGES/geany.mo
+  /usr/share/locale/zh_CN/LC_MESSAGES/geany.mo
+  /usr/share/locale/zh_TW/LC_MESSAGES/geany.mo
+  /usr/share/man/man1/geany.1.gz
+  /usr/share/pixmaps/geany.png
+
+------------------
+
+Port Notes:
+
+----- version 0.14-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/

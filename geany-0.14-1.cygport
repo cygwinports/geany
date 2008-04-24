@@ -1,0 +1,9 @@
+inherit gnome2
+
+DESCRIPTION="GTK+ text editor and IDE"
+HOMEPAGE="http://geany.uvena.de/"
+SRC_URI="mirror://sourceforge/${PN}/${P}.tar.bz2"
+
+DIFF_EXCLUDES="geany.1"
+
+CYGCONF_ARGS="--with-vte-module-path=cygvte-9.dll"
