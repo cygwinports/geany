@@ -6,29 +6,29 @@ and fast IDE, which has only a few dependencies from other packages. It
 supports many filetypes and has some nice features.
 
 Runtime requirements:
-  cygwin-1.5.25-11
-  atk-1.20.0-1
-  gdk-pixbuf2-2.12.9-1
-  glib2-2.14.6-1
-  gtk2-x11-2.12.9-1
-  libcairo2-1.4.14-1
-  libintl8-0.15-1
-  pango-1.18.4-1
-  vte-0.16.12-1
+  cygwin-1.5.25-15
+  atk-1.22.0-1
+  gdk-pixbuf2-2.12.12-1
+  glib2-2.16.6-1
+  gtk2-x11-2.12.12-1
+  libcairo2-1.6.4-1
+  libintl8-0.17-2
+  pango-1.20.5-1
+  vte-0.16.14-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  autoconf2.5-2.61-1
+  autoconf2.5-2.63-1
   automake1.10-1.10.1-1
-  binutils-20060817-1
-  cygport-0.3.10-1
+  binutils-20080624-2
+  cygport-0.4.2-1
   gawk-3.1.6-1
   gcc-core-3.4.4-3
-  gnome-common-2.20.0-1
-  intltool-0.36.3-1
-  libtool-2.2.2-2
+  gnome-common-2.20.0-2
+  intltool-0.40.5-1
+  libtool-2.2.6a-1
   make-3.81-1
-  pkg-config-0.21-1
+  pkg-config-0.23a-2
   sed-4.1.5-2
 
 Canonical website:
@@ -40,15 +40,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack geany-0.14-X-src.tar.bz2
+  unpack geany-0.15-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./geany-0.14-X.cygport all
+  cygport ./geany-0.15-X.cygport all
 
 This will create:
-  /usr/src/geany-0.14-X-src.tar.bz2
-  /usr/src/geany-0.14-X.tar.bz2
+  /usr/src/geany-0.15-X-src.tar.bz2
+  /usr/src/geany-0.15-X.tar.bz2
 
 -------------------------------------------
 
@@ -88,8 +88,6 @@ Files included in the binary package:
   /usr/include/geany/templates.h
   /usr/include/geany/ui_utils.h
   /usr/include/geany/utils.h
-  /usr/lib/geany/autosave.dll
-  /usr/lib/geany/autosave.la
   /usr/lib/geany/classbuilder.dll
   /usr/lib/geany/classbuilder.la
   /usr/lib/geany/export.dll
@@ -98,36 +96,42 @@ Files included in the binary package:
   /usr/lib/geany/filebrowser.la
   /usr/lib/geany/htmlchars.dll
   /usr/lib/geany/htmlchars.la
+  /usr/lib/geany/saveactions.dll
+  /usr/lib/geany/saveactions.la
+  /usr/lib/geany/splitwindow.dll
+  /usr/lib/geany/splitwindow.la
   /usr/lib/geany/vcdiff.dll
   /usr/lib/geany/vcdiff.la
   /usr/lib/pkgconfig/geany.pc
   /usr/share/applications/geany.desktop
-  /usr/share/doc/geany-0.14/AUTHORS
-  /usr/share/doc/geany-0.14/COPYING
-  /usr/share/doc/geany-0.14/ChangeLog
-  /usr/share/doc/geany-0.14/HACKING
-  /usr/share/doc/geany-0.14/INSTALL
-  /usr/share/doc/geany-0.14/NEWS
-  /usr/share/doc/geany-0.14/README
-  /usr/share/doc/geany-0.14/ScintillaLicense.txt
-  /usr/share/doc/geany-0.14/THANKS
-  /usr/share/doc/geany-0.14/TODO
-  /usr/share/doc/geany-0.14/html/images/find_dialog.png
-  /usr/share/doc/geany-0.14/html/images/find_in_files_dialog.png
-  /usr/share/doc/geany-0.14/html/images/pref_dialog_display.png
-  /usr/share/doc/geany-0.14/html/images/pref_dialog_edit.png
-  /usr/share/doc/geany-0.14/html/images/pref_dialog_files.png
-  /usr/share/doc/geany-0.14/html/images/pref_dialog_gen.png
-  /usr/share/doc/geany-0.14/html/images/pref_dialog_interface.png
-  /usr/share/doc/geany-0.14/html/images/pref_dialog_keys.png
-  /usr/share/doc/geany-0.14/html/images/pref_dialog_printing.png
-  /usr/share/doc/geany-0.14/html/images/pref_dialog_templ.png
-  /usr/share/doc/geany-0.14/html/images/pref_dialog_toolbar.png
-  /usr/share/doc/geany-0.14/html/images/pref_dialog_tools.png
-  /usr/share/doc/geany-0.14/html/images/pref_dialog_vte.png
-  /usr/share/doc/geany-0.14/html/images/replace_dialog.png
-  /usr/share/doc/geany-0.14/html/index.html
-  /usr/share/doc/geany-0.14/manual.txt
+  /usr/share/doc/geany-0.15/AUTHORS
+  /usr/share/doc/geany-0.15/COPYING
+  /usr/share/doc/geany-0.15/ChangeLog
+  /usr/share/doc/geany-0.15/HACKING
+  /usr/share/doc/geany-0.15/INSTALL
+  /usr/share/doc/geany-0.15/NEWS
+  /usr/share/doc/geany-0.15/README
+  /usr/share/doc/geany-0.15/ScintillaLicense.txt
+  /usr/share/doc/geany-0.15/THANKS
+  /usr/share/doc/geany-0.15/TODO
+  /usr/share/doc/geany-0.15/html/images/find_dialog.png
+  /usr/share/doc/geany-0.15/html/images/find_in_files_dialog.png
+  /usr/share/doc/geany-0.15/html/images/pref_dialog_edit_completions.png
+  /usr/share/doc/geany-0.15/html/images/pref_dialog_edit_display.png
+  /usr/share/doc/geany-0.15/html/images/pref_dialog_edit_features.png
+  /usr/share/doc/geany-0.15/html/images/pref_dialog_files.png
+  /usr/share/doc/geany-0.15/html/images/pref_dialog_gen.png
+  /usr/share/doc/geany-0.15/html/images/pref_dialog_interface.png
+  /usr/share/doc/geany-0.15/html/images/pref_dialog_keys.png
+  /usr/share/doc/geany-0.15/html/images/pref_dialog_printing.png
+  /usr/share/doc/geany-0.15/html/images/pref_dialog_search.png
+  /usr/share/doc/geany-0.15/html/images/pref_dialog_templ.png
+  /usr/share/doc/geany-0.15/html/images/pref_dialog_toolbar.png
+  /usr/share/doc/geany-0.15/html/images/pref_dialog_tools.png
+  /usr/share/doc/geany-0.15/html/images/pref_dialog_vte.png
+  /usr/share/doc/geany-0.15/html/images/replace_dialog.png
+  /usr/share/doc/geany-0.15/html/index.html
+  /usr/share/doc/geany-0.15/manual.txt
   /usr/share/geany/GPL-2
   /usr/share/geany/filetype_extensions.conf
   /usr/share/geany/filetypes.asm
@@ -141,9 +145,11 @@ Files included in the binary package:
   /usr/share/geany/filetypes.d
   /usr/share/geany/filetypes.diff
   /usr/share/geany/filetypes.docbook
+  /usr/share/geany/filetypes.f77
   /usr/share/geany/filetypes.ferite
   /usr/share/geany/filetypes.fortran
   /usr/share/geany/filetypes.freebasic
+  /usr/share/geany/filetypes.glsl
   /usr/share/geany/filetypes.haskell
   /usr/share/geany/filetypes.haxe
   /usr/share/geany/filetypes.html
@@ -156,7 +162,9 @@ Files included in the binary package:
   /usr/share/geany/filetypes.pascal
   /usr/share/geany/filetypes.perl
   /usr/share/geany/filetypes.php
+  /usr/share/geany/filetypes.po
   /usr/share/geany/filetypes.python
+  /usr/share/geany/filetypes.r
   /usr/share/geany/filetypes.restructuredtext
   /usr/share/geany/filetypes.ruby
   /usr/share/geany/filetypes.sh
@@ -169,6 +177,7 @@ Files included in the binary package:
   /usr/share/geany/latex.tags
   /usr/share/geany/pascal.tags
   /usr/share/geany/php.tags
+  /usr/share/geany/python.tags
   /usr/share/geany/snippets.conf
   /usr/share/icons/hicolor/16x16/apps/classviewer-class.png
   /usr/share/icons/hicolor/16x16/apps/classviewer-macro.png
@@ -191,12 +200,14 @@ Files included in the binary package:
   /usr/share/locale/hu/LC_MESSAGES/geany.mo
   /usr/share/locale/it/LC_MESSAGES/geany.mo
   /usr/share/locale/ja/LC_MESSAGES/geany.mo
+  /usr/share/locale/ko/LC_MESSAGES/geany.mo
   /usr/share/locale/nl/LC_MESSAGES/geany.mo
   /usr/share/locale/pl/LC_MESSAGES/geany.mo
   /usr/share/locale/pt_BR/LC_MESSAGES/geany.mo
   /usr/share/locale/ro/LC_MESSAGES/geany.mo
   /usr/share/locale/ru/LC_MESSAGES/geany.mo
   /usr/share/locale/sv/LC_MESSAGES/geany.mo
+  /usr/share/locale/tr/LC_MESSAGES/geany.mo
   /usr/share/locale/uk/LC_MESSAGES/geany.mo
   /usr/share/locale/vi/LC_MESSAGES/geany.mo
   /usr/share/locale/zh_CN/LC_MESSAGES/geany.mo
@@ -207,6 +218,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 0.15-1 -----
+Version bump.
 
 ----- version 0.14-1 -----
 Initial release for Cygwin.

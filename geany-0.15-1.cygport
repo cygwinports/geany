@@ -3,6 +3,7 @@ inherit gnome2
 DESCRIPTION="GTK+ text editor and IDE"
 HOMEPAGE="http://geany.uvena.de/"
 SRC_URI="mirror://sourceforge/${PN}/${P}.tar.bz2"
+PATCH_URI="0.15-plugins.patch"
 
 DIFF_EXCLUDES="geany.1"
 

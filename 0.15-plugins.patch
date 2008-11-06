@@ -1,0 +1,36 @@
+--- origsrc/geany-0.15/plugins/Makefile.am	2008-10-19 04:51:20.000000000 -0500
++++ src/geany-0.15/plugins/Makefile.am	2008-11-06 00:13:48.727279100 -0600
+@@ -9,14 +9,14 @@
+ plugins_includedir = $(includedir)/geany/
+ plugins_include_HEADERS = pluginmacros.h
+ 
+-demoplugin_la_LDFLAGS    = -module -avoid-version
+-classbuilder_la_LDFLAGS  = -module -avoid-version
+-htmlchars_la_LDFLAGS     = -module -avoid-version
+-export_la_LDFLAGS        = -module -avoid-version
+-vcdiff_la_LDFLAGS        = -module -avoid-version
+-saveactions_la_LDFLAGS   = -module -avoid-version
+-filebrowser_la_LDFLAGS   = -module -avoid-version
+-splitwindow_la_LDFLAGS   = -module -avoid-version
++demoplugin_la_LDFLAGS    = -module -avoid-version -no-undefined
++classbuilder_la_LDFLAGS  = -module -avoid-version -no-undefined
++htmlchars_la_LDFLAGS     = -module -avoid-version -no-undefined
++export_la_LDFLAGS        = -module -avoid-version -no-undefined
++vcdiff_la_LDFLAGS        = -module -avoid-version -no-undefined
++saveactions_la_LDFLAGS   = -module -avoid-version -no-undefined
++filebrowser_la_LDFLAGS   = -module -avoid-version -no-undefined
++splitwindow_la_LDFLAGS   = -module -avoid-version -no-undefined
+ 
+ if PLUGINS
+ 
+--- origsrc/geany-0.15/src/plugins.c	2008-10-19 04:51:13.000000000 -0500
++++ src/geany-0.15/src/plugins.c	2008-11-06 00:14:13.399154100 -0600
+@@ -60,7 +60,7 @@
+ #include "main.h"
+ 
+ 
+-#ifdef G_OS_WIN32
++#ifdef G_PLATFORM_WIN32
+ # define PLUGIN_EXT "dll"
+ #else
+ # define PLUGIN_EXT "so"
