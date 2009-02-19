@@ -5,6 +5,11 @@ HOMEPAGE="http://geany.uvena.de/"
 SRC_URI="mirror://sourceforge/${PN}/${P}.tar.bz2"
 PATCH_URI="0.15-plugins.patch"
 
+PKG_NAMES="${PN} ${PN}-devel"
+PKG_HINTS="setup devel"
+geany_CONTENTS="etc/ usr/bin/ usr/lib/geany/ usr/share/"
+geany_devel_CONTENTS="usr/include/ usr/lib/pkgconfig/"
+
 DIFF_EXCLUDES="geany.1"
 
 CYGCONF_ARGS="--with-vte-module-path=cygvte-9.dll"
