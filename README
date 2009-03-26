@@ -6,28 +6,30 @@ and fast IDE, which has only a few dependencies from other packages. It
 supports many filetypes and has some nice features.
 
 Runtime requirements:
-  cygwin-1.5.25-15
-  libatk1.0_0-1.24.0-1
-  libcairo2-1.8.6-1
-  libgdk_pixbuf2.0_0-2.14.7-2
-  libglib2.0_0-2.18.4-1
-  libgtk2.0_0-2.14.7-2
-  libintl8-0.17-2
-  libpango1.0_0-1.22.4-1
-  libvte9-0.17.4-1
+  cygwin-1.7.0-44
+  libatk1.0_0-1.26.0-1
+  libcairo2-1.8.6-10
+  libgcc1-4.3.2-2
+  libgdk_pixbuf2.0_0-2.16.0-1
+  libglib2.0_0-2.20.0-1
+  libgtk2.0_0-2.16.0-1
+  libintl8-0.17-10
+  libpango1.0_0-1.24.0-1
+  libstdc++6-4.3.2-2
+  libvte9-0.20.0-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  autoconf2.5-2.63-1
-  automake1.10-1.10.1-2
+  autoconf2.5-2.63-10
+  automake1.10-1.10.1-10
   binutils-20080624-2
-  cygport-0.4.3-1
-  gawk-3.1.6-1
-  gcc-core-3.4.4-3
-  gnome-common-2.24.0-1
-  intltool-0.40.5-1
-  libtool-2.2.6a-1
-  make-3.81-1
+  cygport-0.9.6-1
+  gawk-3.1.6-2
+  gcc4-core-4.3.2-2
+  gnome-common-2.26.0-1
+  intltool-0.40.6-1
+  libtool-2.2.6a-2
+  make-3.81-2
   pkg-config-0.23a-2
   sed-4.1.5-2
 
@@ -72,35 +74,34 @@ Files included in the binary package:
   /usr/lib/geany/vcdiff.dll
   /usr/lib/geany/vcdiff.la
   /usr/share/applications/geany.desktop
-  /usr/share/doc/geany-0.16/AUTHORS
-  /usr/share/doc/geany-0.16/COPYING
-  /usr/share/doc/geany-0.16/ChangeLog
-  /usr/share/doc/geany-0.16/HACKING
-  /usr/share/doc/geany-0.16/INSTALL
-  /usr/share/doc/geany-0.16/NEWS
-  /usr/share/doc/geany-0.16/README
-  /usr/share/doc/geany-0.16/ScintillaLicense.txt
-  /usr/share/doc/geany-0.16/THANKS
-  /usr/share/doc/geany-0.16/TODO
-  /usr/share/doc/geany-0.16/html/images/find_dialog.png
-  /usr/share/doc/geany-0.16/html/images/find_in_files_dialog.png
-  /usr/share/doc/geany-0.16/html/images/pref_dialog_edit_completions.png
-  /usr/share/doc/geany-0.16/html/images/pref_dialog_edit_display.png
-  /usr/share/doc/geany-0.16/html/images/pref_dialog_edit_features.png
-  /usr/share/doc/geany-0.16/html/images/pref_dialog_edit_indentation.png
-  /usr/share/doc/geany-0.16/html/images/pref_dialog_files.png
-  /usr/share/doc/geany-0.16/html/images/pref_dialog_gen_misc.png
-  /usr/share/doc/geany-0.16/html/images/pref_dialog_gen_startup.png
-  /usr/share/doc/geany-0.16/html/images/pref_dialog_interface.png
-  /usr/share/doc/geany-0.16/html/images/pref_dialog_keys.png
-  /usr/share/doc/geany-0.16/html/images/pref_dialog_printing.png
-  /usr/share/doc/geany-0.16/html/images/pref_dialog_templ.png
-  /usr/share/doc/geany-0.16/html/images/pref_dialog_toolbar.png
-  /usr/share/doc/geany-0.16/html/images/pref_dialog_tools.png
-  /usr/share/doc/geany-0.16/html/images/pref_dialog_vte.png
-  /usr/share/doc/geany-0.16/html/images/replace_dialog.png
-  /usr/share/doc/geany-0.16/html/index.html
-  /usr/share/doc/geany-0.16/manual.txt
+  /usr/share/doc/geany/AUTHORS
+  /usr/share/doc/geany/COPYING
+  /usr/share/doc/geany/ChangeLog
+  /usr/share/doc/geany/HACKING
+  /usr/share/doc/geany/NEWS
+  /usr/share/doc/geany/README
+  /usr/share/doc/geany/ScintillaLicense.txt
+  /usr/share/doc/geany/THANKS
+  /usr/share/doc/geany/TODO
+  /usr/share/doc/geany/html/images/find_dialog.png
+  /usr/share/doc/geany/html/images/find_in_files_dialog.png
+  /usr/share/doc/geany/html/images/pref_dialog_edit_completions.png
+  /usr/share/doc/geany/html/images/pref_dialog_edit_display.png
+  /usr/share/doc/geany/html/images/pref_dialog_edit_features.png
+  /usr/share/doc/geany/html/images/pref_dialog_edit_indentation.png
+  /usr/share/doc/geany/html/images/pref_dialog_files.png
+  /usr/share/doc/geany/html/images/pref_dialog_gen_misc.png
+  /usr/share/doc/geany/html/images/pref_dialog_gen_startup.png
+  /usr/share/doc/geany/html/images/pref_dialog_interface.png
+  /usr/share/doc/geany/html/images/pref_dialog_keys.png
+  /usr/share/doc/geany/html/images/pref_dialog_printing.png
+  /usr/share/doc/geany/html/images/pref_dialog_templ.png
+  /usr/share/doc/geany/html/images/pref_dialog_toolbar.png
+  /usr/share/doc/geany/html/images/pref_dialog_tools.png
+  /usr/share/doc/geany/html/images/pref_dialog_vte.png
+  /usr/share/doc/geany/html/images/replace_dialog.png
+  /usr/share/doc/geany/html/index.html
+  /usr/share/doc/geany/manual.txt
   /usr/share/geany/GPL-2
   /usr/share/geany/c99.tags
   /usr/share/geany/filetype_extensions.conf
@@ -230,14 +231,8 @@ Files included in the binary package:
 
 Port Notes:
 
------ version 0.16-1 -----
-Version bump.
-
------ version 0.15-1 -----
-Version bump.
-
------ version 0.14-1 -----
-Initial release for Cygwin.
+----- version 0.16-10 -----
+Initial release for Cygwin 1.7.
 
 
 Cygwin port maintained by:
