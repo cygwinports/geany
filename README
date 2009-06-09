@@ -6,35 +6,35 @@ and fast IDE, which has only a few dependencies from other packages. It
 supports many filetypes and has some nice features.
 
 Runtime requirements:
-  cygwin-1.7.0-44
+  cygwin-1.7.0-48
   libatk1.0_0-1.26.0-1
   libcairo2-1.8.6-10
   libgcc1-4.3.2-2
-  libgdk_pixbuf2.0_0-2.16.0-1
-  libglib2.0_0-2.20.0-1
-  libgtk2.0_0-2.16.0-1
+  libgdk_pixbuf2.0_0-2.16.2-1
+  libglib2.0_0-2.20.3-1
+  libgtk2.0_0-2.16.2-1
   libintl8-0.17-10
-  libpango1.0_0-1.24.0-1
+  libpango1.0_0-1.24.2-1
   libstdc++6-4.3.2-2
-  libvte9-0.20.0-1
+  libvte10-0.20.4-1
 
 Build requirements:
 (besides corresponding -devel packages)
   autoconf2.5-2.63-10
-  automake1.10-1.10.1-10
+  automake1.10-1.10.2-10
   binutils-20080624-2
   cygport-0.9.6-1
   gawk-3.1.6-2
   gcc4-core-4.3.2-2
-  gnome-common-2.26.0-1
+  gnome-common-2.26.0-2
   intltool-0.40.6-1
-  libtool-2.2.6a-2
+  libtool-2.2.7a-12
   make-3.81-2
-  pkg-config-0.23a-2
+  pkg-config-0.23b-10
   sed-4.1.5-2
 
 Canonical website:
-  http://geany.uvena.de/
+  http://www.geany.org/
 
 Canonical download:
   http://downloads.sourceforge.net/geany/
@@ -42,16 +42,16 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack geany-0.16-X-src.tar.bz2
+  unpack geany-0.17-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./geany-0.16-X.cygport all
+  cygport ./geany-0.17-X.cygport all
 
 This will create:
-  /usr/src/geany-0.16-X-src.tar.bz2
-  /usr/src/geany-0.16-X.tar.bz2
-  /usr/src/geany-devel-0.16-X.tar.bz2
+  /usr/src/geany-0.17-X-src.tar.bz2
+  /usr/src/geany-0.17-X.tar.bz2
+  /usr/src/geany-devel-0.17-X.tar.bz2
 
 -------------------------------------------
 
@@ -71,8 +71,6 @@ Files included in the binary package:
   /usr/lib/geany/saveactions.la
   /usr/lib/geany/splitwindow.dll
   /usr/lib/geany/splitwindow.la
-  /usr/lib/geany/vcdiff.dll
-  /usr/lib/geany/vcdiff.la
   /usr/share/applications/geany.desktop
   /usr/share/doc/geany/AUTHORS
   /usr/share/doc/geany/COPYING
@@ -105,6 +103,7 @@ Files included in the binary package:
   /usr/share/geany/GPL-2
   /usr/share/geany/c99.tags
   /usr/share/geany/filetype_extensions.conf
+  /usr/share/geany/filetypes.actionscript
   /usr/share/geany/filetypes.asm
   /usr/share/geany/filetypes.c
   /usr/share/geany/filetypes.caml
@@ -200,6 +199,7 @@ Files included in the binary package:
   /usr/include/geany/geanyfunctions.h
   /usr/include/geany/highlighting.h
   /usr/include/geany/keybindings.h
+  /usr/include/geany/main.h
   /usr/include/geany/msgwindow.h
   /usr/include/geany/plugindata.h
   /usr/include/geany/pluginmacros.h
@@ -230,6 +230,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 0.17-1 -----
+Version bump.
 
 ----- version 0.16-10 -----
 Initial release for Cygwin 1.7.

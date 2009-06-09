@@ -1,9 +1,9 @@
 inherit gnome2
 
 DESCRIPTION="GTK+ text editor and IDE"
-HOMEPAGE="http://geany.uvena.de/"
+HOMEPAGE="http://www.geany.org/"
 SRC_URI="mirror://sourceforge/${PN}/${P}.tar.bz2"
-PATCH_URI="0.15-plugins.patch"
+PATCH_URI="0.17-plugins.patch"
 
 PKG_NAMES="${PN} ${PN}-devel"
 PKG_HINTS="setup devel"
@@ -12,4 +12,4 @@ geany_devel_CONTENTS="usr/include/ usr/lib/pkgconfig/"
 
 DIFF_EXCLUDES="geany.1"
 
-CYGCONF_ARGS="--with-vte-module-path=cygvte-9.dll"
+CYGCONF_ARGS="--with-vte-module-path=/usr/bin/cygvte-10.dll"
