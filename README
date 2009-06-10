@@ -16,7 +16,7 @@ Runtime requirements:
   libintl8-0.17-10
   libpango1.0_0-1.24.2-1
   libstdc++6-4.3.2-2
-  libvte10-0.20.4-1
+  libvte9-0.20.5-1
 
 Build requirements:
 (besides corresponding -devel packages)

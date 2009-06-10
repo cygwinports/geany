@@ -12,4 +12,4 @@ geany_devel_CONTENTS="usr/include/ usr/lib/pkgconfig/"
 
 DIFF_EXCLUDES="geany.1"
 
-CYGCONF_ARGS="--with-vte-module-path=/usr/bin/cygvte-10.dll"
+CYGCONF_ARGS="--with-vte-module-path=/usr/bin/cygvte-9.dll"
