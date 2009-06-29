@@ -1,5 +1,5 @@
 category: Editors Gnome
-requires: cygwin geany libglib2.0-devel libgtk2.0-devel
+requires: geany libglib2.0-devel libgtk2.0-devel
 external-source: geany
 sdesc: "GTK+ text editor and IDE (plugin development)"
 ldesc: "Geany is a text editor using the GTK2 toolkit with basic 
