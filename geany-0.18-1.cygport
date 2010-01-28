@@ -2,7 +2,7 @@ inherit gnome2
 
 DESCRIPTION="GTK+ text editor and IDE"
 HOMEPAGE="http://www.geany.org/"
-SRC_URI="mirror://sourceforge/${PN}/${P}.tar.bz2"
+SRC_URI="http://download.geany.org/${P}.tar.bz2"
 PATCH_URI="0.17-plugins.patch"
 
 PKG_NAMES="${PN} ${PN}-devel"
