@@ -1,7 +1,0 @@
-category: Editors Gnome
-requires: libatk1.0_0 libcairo2 libgcc1 libgdk_pixbuf2.0_0 libglib2.0_0 libgtk2.0_0 libintl8 libpango1.0_0 libstdc++6 libvte9
-sdesc: "GTK+ text editor and IDE"
-ldesc: "Geany is a text editor using the GTK2 toolkit with basic 
-features of an integrated development environment. It was developed to 
-provide a small and fast IDE, which has only a few dependencies from 
-other packages. It supports many filetypes and has some nice features."
