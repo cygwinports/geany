@@ -1,0 +1,11 @@
+--- origsrc/geany-1.23.1/data/filetype_extensions.conf	2013-05-19 07:57:32.000000000 -0500
++++ src/geany-1.23.1/data/filetype_extensions.conf	2013-09-24 14:56:22.246610900 -0500
+@@ -51,7 +51,7 @@ reStructuredText=*.rest;*.reST;*.rst;
+ R=*.R;*.r;
+ Ruby=*.rb;*.rhtml;*.ruby;
+ Scala=*.scala;*.scl;
+-Sh=*.sh;configure;configure.in;configure.in.in;configure.ac;*.ksh;*.zsh;*.ash;*.bash;*.m4;
++Sh=*.sh;configure;configure.in;configure.in.in;configure.ac;*.ksh;*.zsh;*.ash;*.bash;*.m4;*.cygport;*.cygpart;*.cygclass;
+ SQL=*.sql;
+ Tcl=*.tcl;*.tk;*.wish;
+ Txt2tags=*.t2t;

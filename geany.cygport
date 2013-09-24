@@ -1,7 +1,7 @@
 inherit gnome2
 
 NAME="geany"
-VERSION=1.22
+VERSION=1.23.1
 RELEASE=1
 CATEGORY="Editors"
 SUMMARY="GTK+ text editor and IDE"
@@ -11,7 +11,10 @@ and fast IDE, which has only a few dependencies from other packages. It
 supports many filetypes and has some nice features."
 HOMEPAGE="http://www.geany.org/"
 SRC_URI="http://download.geany.org/geany-${VERSION}.tar.bz2"
-PATCH_URI="0.17-plugins.patch"
+PATCH_URI="
+	0.17-plugins.patch
+	1.23-filetype-cygport.patch
+"
 
 PKG_NAMES="geany geany-devel"
 geany_REQUIRES="libvte9" # dlopen'ed
