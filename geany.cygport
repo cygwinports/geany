@@ -1,7 +1,7 @@
 inherit gnome2
 
 NAME="geany"
-VERSION=1.24.1
+VERSION=1.25
 RELEASE=1
 CATEGORY="Editors"
 SUMMARY="GTK+ text editor and IDE"
@@ -12,16 +12,15 @@ supports many filetypes and has some nice features."
 HOMEPAGE="http://www.geany.org/"
 SRC_URI="http://download.geany.org/geany-${VERSION}.tar.bz2"
 PATCH_URI="
-	0.17-plugins.patch
 	1.24-filetype-cygport.patch
+	1.25-ldflags.patch
 "
 
 PKG_NAMES="geany geany-devel"
 geany_REQUIRES="libvte9" # dlopen'ed
 geany_CONTENTS="etc/ usr/bin/ usr/lib/geany/ usr/share/"
 geany_devel_SUMMARY="${SUMMARY} (plugin development)"
-geany_devel_REQUIRES="geany"
-geany_devel_CONTENTS="usr/include/ usr/lib/pkgconfig/"
+geany_devel_CONTENTS="usr/include/ usr/lib/libgeany.dll.a usr/lib/pkgconfig/"
 
 DIFF_EXCLUDES="geany.1 libtool.m4 ltmain.sh"
 
