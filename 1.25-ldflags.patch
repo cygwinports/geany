@@ -1,0 +1,10 @@
+--- origsrc/geany-1.25/src/Makefile.am	2015-07-12 11:07:55.000000000 -0500
++++ src/geany-1.25/src/Makefile.am	2015-10-20 13:06:44.179073100 -0500
+@@ -167,6 +167,7 @@ AM_CPPFLAGS += \
+ 	-DGEANY_PREFIX=\""$(prefix)"\"
+ 
+ libgeany_la_SOURCES += vte.c vte.h
++libgeany_la_LDFLAGS += -no-undefined
+ 
+ endif
+ 
