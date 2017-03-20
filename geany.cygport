@@ -1,7 +1,7 @@
 inherit gnome2
 
 NAME="geany"
-VERSION=1.28
+VERSION=1.30
 RELEASE=1
 CATEGORY="Editors"
 SUMMARY="GTK+ text editor and IDE"
